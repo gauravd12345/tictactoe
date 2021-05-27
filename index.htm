@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    
+    <div class="board">
+        <div id="box1" class="cell"> </div>
+        <div id="box2" class="cell"> </div>
+        <div id="box3" class="cell"> </div>
+        <div id="box4" class="cell"> </div>
+        <div id="box5" class="cell"> </div>
+        <div id="box6" class="cell"> </div>
+        <div id="box7" class="cell"> </div>
+        <div id="box8" class="cell"> </div>
+        <div id="box9" class="cell"> </div>
+
+    </div>
+
+    <div id="status" class="player"></div>
+    <br>
+    <form onkeypress="return event.keyCode != 13">
+        <input type="text" id= "ipt" class="player" placeholder="Enter move" onkeydown="handleInput(this)">
+        <br></br>
+        <button type="submit" class="player">Restart</button>
+
+    </form>
+
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
